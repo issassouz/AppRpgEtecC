@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AppRpgEtec.Services.Usuarios;
 using Azure.Storage.Blobs;
 
 namespace AppRpgEtec.ViewModels
@@ -20,6 +21,9 @@ namespace AppRpgEtec.ViewModels
         }
 
         private byte[] foto;
+        private string conexaoAzureStorage;
+        private string container;
+
         public byte[] Foto
         {
             get => foto;

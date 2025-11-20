@@ -8,11 +8,11 @@
                     TextColor="Black" SearchCommand="{Binding PesquisarPersonagensCommand}"
                     SearchCommandParameter="{Binding Source={x:Reference searchBar}, Path=Text}"/>
 
-        <Entry Placeholder="Digite o nome do Personagem..." Text="{Binding TextBuscaDigitado}"</Entry>
-            <ListView x:Name="lvPersonagens" HasUnevenRows="True" ItemsSource="{Binding
-PersonagensEncontrados}"
-SelectedItem="{Binding PersonagemSelecionado}"
-Margin="10, 5, 0, 0">
+        <Entry Placeholder="Digite o nome do Personagem..." Text="{Binding TextBuscaDigitado}"/>
+        <ListView x:Name="lvPersonagens" HasUnevenRows="True" ItemsSource="{Binding
+                        PersonagensEncontrados}"
+                        SelectedItem="{Binding PersonagemSelecionado}"
+                        Margin="10, 5, 0, 0">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
